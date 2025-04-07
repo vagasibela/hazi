@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reszponzív Képgaléria</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Preconnect a gyorsabb betöltésért -->
+    <link rel="preconnect" href="https://code.jquery.com">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Képgaléria</h1>
+        <div class="gallery">
+            <img src="https://picsum.photos/id/10/800/600" alt="Erdei táj" class="gallery-image" loading="lazy">
+            <img src="https://picsum.photos/id/11/800/600" alt="Hegyek" class="gallery-image" loading="lazy">
+            <img src="https://picsum.photos/id/12/800/600" alt="Tó" class="gallery-image" loading="lazy">
+            <img src="https://picsum.photos/id/13/800/600" alt="Sziklák" class="gallery-image" loading="lazy">
+            <img src="https://picsum.photos/id/14/800/600" alt="Tengerpart" class="gallery-image" loading="lazy">
+            <img src="https://picsum.photos/id/15/800/600" alt="Mező" class="gallery-image" loading="lazy">
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <div class="lightbox-content">
+            <img class="lightbox-image" id="lightbox-image" alt="">
+            <div class="image-caption" id="image-caption"></div>
+        </div>
+    </div>
+
+    <!-- jQuery + saját script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
